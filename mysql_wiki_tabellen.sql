@@ -52,6 +52,11 @@
 -- preferences and to key tracking information in the other
 -- tables.
 --
+
+CREATE DATABASE IF NOT EXISTS wiki;
+USE wiki;
+
+
 CREATE TABLE /*_*/user (
   user_id int unsigned NOT NULL PRIMARY KEY AUTO_INCREMENT,
 
