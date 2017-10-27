@@ -18,8 +18,13 @@ Make myslq commandline tool available
 
 For the first time: Generate DB Schema `wiki`
 
-    mysql -h 123.0.0.1 -P 3306 -u root -p -v --force < mysql_wiki_tabellen.sql
+    mysql -h 127.0.0.1 -P 3306 -u root -p -v --force < mysql_wiki_tabellen.sql
 
 Import dumps
 
-    mysql -h 123.0.0.1 -P 3306 -u root -p -v --force wiki < dewiki-20171020-category.sql
+    mysql -h 127.0.0.1 -P 3306 -u root -p -v --force wiki < dewiki-20171020-category.sql
+    mysql -h 127.0.0.1 -P 3306 -u root -p -v --force wiki < dewiki-20171020-categorylinks.sql
+    mysql -h 127.0.0.1 -P 3306 -u root -p -v --force wiki < dewiki-20171020-redirects.sql
+    mysql -h 127.0.0.1 -P 3306 -u root -p -v --force wiki < dewiki-20171020-page.sql
+    mysql -h 127.0.0.1 -P 3306 -u root -p -v --force wiki < dewiki-20171020-pagelinks.sql
+    -- mysql -h 127.0.0.1 -P 3306 -u root -p -v --force wiki < dewiki-20171020-langlinks.sql
